@@ -8,10 +8,6 @@ class Message(models.Model):
     def __str__(self):
         return self.message_text
 
-    def save(self, *args, **kwargs):
-        super(Message, self).save(*args, **kwargs)  # Call the "real" save() method.
-        new_message = None
-
 
     class Meta:
         verbose_name = 'Сообщение'
